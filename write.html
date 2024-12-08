@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Story Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://img.freepik.com/premium-photo/colorful-book-case-filled-with-books-style-dark-themes_921860-195357.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #0C356A;
+        }
+
+        .navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0; display: flex;
+    align-items: center; justify-content: space-between;
+}
+.logo {
+    width: 120px;
+    cursor: pointer;
+    }
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    }
+.navbar ul li a{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+}
+.navbar ul li::after{ content: '';
+     height: 3px; width: 0;
+ background: #009688; position: absolute;
+left: 0; bottom:-10;
+transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+    }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background:rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid #40F8FF;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #279EFF;
+            border-radius: 4px;
+            background-color: white;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0C356A;
+            margin-bottom: 20px;
+            border: 2px dashed #279EFF;
+            border-radius: 4px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color:white;
+            color: #0C356A;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background-color: #0C356A;
+            color:white;
+        }
+
+        .rating-switch {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .rating-switch input {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+            <div class="navbar"><img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#"> TRY PREMIUM</a></li>
+                <li><a href="#">FAQs </a></li>
+                <li><a href="#"> BACK </a></li>
+                
+                <li><a href="#">  LANGUAGE </a></li>
+            </ul>
+            </div>
+    </div>
+
+    <div class="container">
+        <h1>Add Story Info</h1>
+
+        <div class="image-placeholder">
+            + Add a cover image
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Untitled Story">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Write a brief description..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="characters">Main Characters</label>
+                <input type="text" id="characters" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option>Select a category</option>
+                    <option>Fantasy</option>
+                    <option>Science Fiction</option>
+                    <option>Romance</option>
+                    <option>Horror</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tags">Tags</label>
+                <input type="text" id="tags" placeholder="Add a tag">
+            </div>
+
+            <div class="form-group">
+                <label for="audience">Target Audience</label>
+                <select id="audience">
+                    <option>General</option>
+                    <option>Teens</option>
+                    <option>Adults</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="language">Language</label>
+                <select id="language">
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Bengali</option>
+                    <option>Marathi</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="copyright">Copyright</label>
+                <select id="copyright">
+                    <option>All Rights Reserved</option>
+                    <option>Creative Commons</option>
+                </select>
+            </div>
+
+            <div class="form-group rating-switch">
+                <label for="mature">Rating</label>
+                <input type="checkbox" id="mature">
+                <span>Mature</span>
+            </div>
+
+            <div class="button-group">
+                <button type="button">Cancel</button>
+                <button type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
