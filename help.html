@@ -3,88 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Center</title>
-    <link rel="stylesheet" href="help.css">
+    <title>Novel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
+    <div class="banner">
+        <!-- Navbar -->
         <div class="navbar">
-            <div class="logo">
-                <img src="images/NOVLUU.png" class="logo" style="height: 100px;width: 100px;">
-            </div>
-            <div class="language-signin">
-                <a href="#"></a>
-                <a href="./index.html" class="signin-btn" style="color:white">Back</a>
-            </div>
+            <img src="images//NOVLUU.png" class="logo">
+            <ul>
+                <li><a href="javascript:void(0)" id="loginBtn">Login</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./help.html">Help</a></li>
+                <li class="language-menu">
+                    <a href="#">Language</a>
+                    <ul class="language-options">
+                        <li><a href="#" onclick="setLanguage('en')">English</a></li>
+                        <li><a href="#" onclick="setLanguage('hi')">Hindi</a></li>
+                        <li><a href="#" onclick="setLanguage('bn')">Bengali</a></li>
+                        <li><a href="#" onclick="setLanguage('mr')">Marathi</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="overlay">
-            <h1>How can we help?</h1>
-            <div class="search-bar">
-                <input type="text" placeholder="Search Help Center">
-                <button>Search</button>
+        <!-- Wrapper (Login Form) -->
+        <div class="wrapper" id="loginWrapper" style="display: none;">
+            <div class="form-box">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">&#xf0e0;</span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">&#xf023;</span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <div class="boxx"><label  style="color: white;">
+                            <input type="checkbox"> Remember me               
+                        </label></div>
+                        <a href="#" class="register-link">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn" id="loginn">Login</button> 
+                    <div class="login-register">
+                        <p style="color: white;"><div class="boxx" style="color: white;">Don't have an account? </div><a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form><br><br><br><br>
+                <button id="closeBtn" class="btn">Close</button>
             </div>
-            
         </div>
-    </section>
 
-    <!-- Tiles Section -->
-    <section class="tiles">
-        <div class="tile">
-            <img src="images/flag.png" alt="Getting Started Icon">
-            <h3>Getting Started</h3>
-            <p>Just signed up? Click here!</p>
+        <!-- Content -->
+        <div class="content">
+            <h1>NOVLUU</h1>
+            <p>Your gateway to a world of imagination!<br>Where imagination meets creativity, and every story finds a voice.</p>
+            <div>
+                <button type="button"><a href="./readingsection.html" style="color:white"><span></span>START READING</a></button>
+                <button type="button"><a href="./write.html" style="color:white"><span></span>START WRITING</a></button>
+            </div>
         </div>
-        <div class="tile">
-            <img src="images/account.png" alt="Your Account Icon">
-            <h3>Your Account</h3>
-            <p>Password, email, and privacy settings.</p>
-        </div>
-        <div class="tile">
-            <img src="images/Reading.png" alt="Reading Icon">
-            <h3>Reading</h3>
-            <p>Explore features like library and search.</p>
-        </div>
-        <div class="tile">
-            <img src="images/doc.png" alt="Writing Icon">
-            <h3>Writing and My Stories</h3>
-            <p>Publishing stories and drafts.</p>
-        </div>
-        <div class="tile">
-            <img src="images/premium-badge.png" alt="Premium Icon">
-            <h3>Novluu premium</h3>
-            <p>Subscribe and manage your account.</p>
-        </div>
-        <div class="tile">
-            <img src="images/interactivity.png" alt="Interacting Icon">
-            <h3>Interacting</h3>
-            <p>Messaging, commenting, and notifications.</p>
-        </div>
-    </section>
+    </div>
 
-    <!-- Contact Section -->
-    <footer class="contact-section">
-        <div class="footer-content">
-            <h2>Contact Us</h2>
-            <div class="contact-details">
-                <p><strong>Email:</strong> support@helpcenter.com</p>
-                <p><strong>Phone:</strong> +1-234-567-890</p>
-                <p><strong>Address:</strong> pune , maharastra</p>
-            </div>
-            <div class="footer-logos" >
-                <img src="images/facebook.png" alt="Facebook" class="social-icon">
-                <img src="images/twitter.png" alt="Twitter" class="social-icon">
-                <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
-                <img src="images/social.png" alt="Instagram" class="social-icon">
-            </div>
-        </div>
-        <div class="footer-credits">
-            <p>©️ 2024 Help Center. All rights reserved.</p>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
