@@ -3,61 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novel</title>
-    <link rel="stylesheet" href="feedback..css">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
 </head>
 <body>
+    
+        
+        <div class="navbar">
+            <img src="./NOVLUU.png" class="logo">
+            <ul>
+                
+                <li><a href="#">About</a></li>
+                <li><a href="#">Language</a></li>
+                
+                <li><a href="./index.html">Back</a></li>
+            </ul>
+        </div>
     <div class="wrap">
-        <table>
-            <form action="" method="">
-                <h1>Feedback Form</h1>
-                <tr>
-                    <td colspan="2">
-                        <label>
-                            How do you rate your overall experience
-                        </label><br/>
-                        <input type="radio" name="rate" value="bad">Bad
-                        <input type="radio" name="rate" value="average">Average
-                        <input type="radio" name="rate" value="good">Good
-                    </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>Fullname*</label><br/>
-                            <input type="text" name="Fullname" class="txt">
-                        </td>
-                        <td>
-                            <label>Email*</label><br/>
-                            <input type="email" name="email" class="txt">
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>Age*</label><br/>
-                            <input type="text" name="age" class="txt">
-                        </td>
-                        <td>
-                            <label>Phone*</label><br/>
-                            <input type="text" name="phone" class="txt">
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <label>Message*</label><br/>
-                            <textarea class="txtarea"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <button type="submit" class="btn">Submit</button>
-                        </td>
-                    </tr>
-
-            </form>
-        </table>
+        <form action="" method="">
+            <h1>Feedback Form</h1>
+            <div class="form-group">
+                <label class="label" style="font-size:25px;">How do you rate your overall experience</label>
+                <div class="rating-options">
+                    <label>
+                        <input type="radio" name="rate" value="bad">
+                        <span class="bad">Bad</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="rate" value="average">
+                        <span class="average">Average</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="rate" value="good">
+                        <span class="good">Good</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label class="label">Fullname<span style="color: red;">*</span></label>
+                    <input type="text" name="fullname" class="txt" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label class="label">Email<span style="color: red;">*</span></label>
+                    <input type="email" name="email" class="txt" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label class="label">Age<span style="color: red;">*</span></label>
+                    <input type="text" name="age" class="txt" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label class="label">Phone<span style="color: red;">*</span></label>
+                    <input type="text" name="phone" class="txt" placeholder="Enter your phone number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="label">Message<span style="color: red;">*</span></label>
+                <textarea class="txtarea" placeholder="Enter your feedback"></textarea>
+            </div>
+            <div class="form-group" style="margin-top:100px;">
+                <button type="submit" class="btn">Submit Feedback</button>
+            </div>
+        </form>
     </div>
-
 </body>
 </html>
