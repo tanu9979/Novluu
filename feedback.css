@@ -1,44 +1,167 @@
 body {
-    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2024/03/starfall-night-sky-mountains-aesthetic-gif-cover-desktop-wallpaper.gif);
+    background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/red-and-blue-pillars-wallpaper-abstract-background-free-image.jpeg?w=600&quality=80');
     background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+
+
+
+
+
+/* Navbar */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+ .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    .navbar ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+    
+    
+    
 .wrap {
-    width: 800px;
-    height: 700px;
-    margin: 30px auto;
+    width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-    font-size: 40px;
-    color: antiquewhite;
+    font-size: 36px;
+    color: #fdf5e6;
     text-align: center;
-    border-bottom: 2px solid antiquewhite;
+    border-bottom: 2px solid #fdf5e6;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    color: #fdf5e6;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rating-options label {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.rating-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.bad {
+    color: white;
+}
+
+.average {
+    color: white;
+}
+
+.good {
+    color: white;
 
 }
-table {
-    font-size: 30px;
-}
-td {
-    padding: 10px 20px 0px 0px;
 
-}
-.txt{
-    width: 400px;
-    height: 50px;
+.txt, .txtarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
 .txtarea {
-    width: 830px;
-    height: 150px;
-    border-radius: 8px;
+    height: 100px;
+    resize: none;
 }
 
 .btn {
-    width: 830px;
-    height: 50px;
-    background-color: blue;
-    font-size: 20px;
-    color: antiquewhite;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: #fdf5e6;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: #ccc ;
+    
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+.rating-options{
+    text-align: center;
+    margin:50px;
+
+}
+.form-group{
+    margin: 25px;
 }
