@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -41,30 +42,62 @@ body {
     position: relative;
 }
 
- .navbar ul li a {
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-    }
-    
-    .navbar ul li::after {
-        content: '';
-        height: 3px;
-        width: 0;
-        background: #009688;
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-        transition: 0.5s;
-    }
-    
-    .navbar ul li:hover::after {
-        width: 100%;
-    }
-    
-    
-    
-    
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Language Menu */
+.language-menu {
+    position: relative;
+}
+
+.language-menu:hover .language-options {
+    display: block;
+}
+
+.language-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 150px;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.language-options li {
+    padding: 10px 20px;
+}
+
+.language-options li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.language-options li a:hover {
+    background-color: #009688;
+}
+
 /* Wrapper (Login Form) */
 .wrapper {
     position: absolute;
@@ -86,24 +119,17 @@ body {
 
 .wrapper  .remember-forgot .boxx{display: inline-block;
     width: 250px;
-
 }
 .wrapper  .login-register .boxx{display: inline-block;
     width: 250px;
     border: 20px solid transparent;
-
 }
 .wrapper  #loginn{
-    
     left:90px;
 }
 .wrapper  #closeBtn{
-    
     left:90px;
 }
-
-
-
 
 .form-box h2 {
     font-size: 2em;
