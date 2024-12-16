@@ -7,7 +7,7 @@
     let countItem = items.length;
     let itemActive = 0;
 
-    // Next button event
+ // button event
     next.onclick = function () {
         itemActive = itemActive + 1;
         if (itemActive >= countItem) {
